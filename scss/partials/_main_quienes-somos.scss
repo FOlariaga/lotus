@@ -1,0 +1,27 @@
+.main_quienes-somos{
+    background-color: rgb(212, 188, 188);
+    min-height: calc(100vh - 51.2px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .historia{
+        width: 60%;
+        padding: 25px 40px;
+        
+        h1{
+            font-family: 'Lora', serif;
+        }
+        .tabo{
+            text-decoration: none;
+        }
+    }
+    .logo{
+        width: 30%;
+
+        img{
+            width: 100%;
+            max-width: 350px;
+        }
+    }
+}

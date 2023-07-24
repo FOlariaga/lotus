@@ -1,0 +1,60 @@
+.cards_productos{
+    background-color: blue;
+    
+    .card_producto{
+        display: inline-block;
+        width: 250px;
+        color:azure;
+        border: 2px solid black;
+
+        img{
+            width: 100%;
+        }
+        .modelo{}
+        .precio{}
+        .talles{}
+        .buttons{
+            .informacion{}
+            .agregar{}
+        }
+    }
+}
+
+
+// HTML
+
+
+
+// <section class="cards_productos">
+// <div class="card_producto">
+//   <img src="../image/zapas_fondo.jpg" alt="">
+//   <p class="modelo">modelo</p>
+//   <p class="precio">precio</p>
+//   <p class="talles">talles</p>
+//   <div class="buttons">
+//     <button class="informacion">Más información</button>
+//     <button class="agregar">Al carro</button>
+//   </div>
+// </div>
+// <div class="card_producto">
+//   <img src="../image/zapas_fondo.jpg" alt="">
+//   <p class="modelo">modelo</p>
+//   <p class="precio">precio</p>
+//   <p class="talles">talles</p>
+//   <div class="buttons">
+//     <button class="informacion">Más información</button>
+//     <button class="agregar">Al carro</button>
+//   </div>
+// </div>
+// <div class="card_producto">
+//   <img src="../image/zapas_fondo.jpg" alt="">
+//   <p class="modelo">modelo</p>
+//   <p class="precio">precio</p>
+//   <p class="talles">talles</p>
+//   <div class="buttons">
+//     <button class="informacion">Más información</button>
+//     <button class="agregar">Al carro</button>
+//   </div>
+// </div>
+
+// </section>

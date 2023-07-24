@@ -1,0 +1,22 @@
+@media screen and (max-width:720px){
+    .main_inicio{
+        display: flex;
+        flex-direction: column;
+
+        .lotus{
+            width: 100%;
+        }
+        .apoyo{
+            flex-direction: column;
+
+            .buenas-zapatillas{
+                width: 100%;
+                margin: 10px;
+                border: 0px;
+            }
+            .tips{
+                width: 100%;
+            }
+        }
+    }
+}

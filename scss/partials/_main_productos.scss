@@ -1,0 +1,64 @@
+.main_productos{
+    background-color: rgb(212, 188, 188);
+
+    .carousel{
+        padding-block: 10px;
+        
+        .carousel_size{
+            width: 75%;
+
+            span{
+                background-color: rgb(70, 70, 70);
+            }
+            img{
+                width: 100%;
+                max-height: 600px;
+                background-color: rgb(255, 255, 255);
+            }
+        }
+    }
+    h2{
+        font-family: 'Lora', serif;
+        margin-block: 1.5rem 1rem ;
+        font-weight: 600;
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 10px;
+
+        .card{
+            max-width: 250px;
+            padding: 10px;
+            background-color: rgb(224, 224, 224);
+
+            .card_img{
+                flex: 1;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                img{
+                    width: 100%;
+                }
+            }
+            .card_info{
+                .zapatilla{
+                    font-weight: 700;
+                }
+                .precio-viejo{
+                    font-weight: 300;
+                    text-decoration: line-through;
+                }
+                .precio{
+                    font-weight: 600;
+                }
+
+            }
+        }
+    }
+}
+
+    

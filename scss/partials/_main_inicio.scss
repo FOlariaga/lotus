@@ -1,0 +1,52 @@
+.main_inicio{
+    min-height: calc(100vh - 44px);
+    background-color:  rgb(212, 188, 188);
+    
+
+    
+    .lotus{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        padding: 1.5rem;
+        gap: 10px;
+        
+        h1{
+            font-family: 'Lora', serif;
+            font-size: 5rem;
+        }
+        .logo{
+            width: 150px;
+        }
+    }
+    .apoyo{
+        display: flex;
+        margin-block: 10px;
+
+        .buenas-zapatillas{
+            width: 50%;
+            margin: 10px;
+            padding: 10px;
+            border: 3px solid rgb(231, 172, 172);
+
+            h2{
+                font-family: 'Lora', serif;
+                padding: 10px;
+            }
+            p{
+                padding: 10px;
+            }
+        }
+        .tips{
+            width: 40%;
+            padding:20px;
+        }
+    }    
+    .video{
+        width: 50%;
+        padding: 20px
+
+    }
+
+}
