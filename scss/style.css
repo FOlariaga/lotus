@@ -73,19 +73,48 @@ footer div {
   min-height: calc(100vh - 44px);
   background-color: rgb(212, 188, 188);
 }
-.main_inicio .lotus {
+.main_inicio .inicio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main_inicio .inicio .lotus {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   padding: 1.5rem;
   gap: 10px;
 }
-.main_inicio .lotus h1 {
+.main_inicio .inicio .lotus h1 {
   font-family: "Lora", serif;
   font-size: 5rem;
 }
-.main_inicio .lotus .logo {
+.main_inicio .inicio .lotus .logo {
   width: 150px;
+}
+.main_inicio .inicio .pelota {
+  width: 100px;
+  height: 100px;
+  animation-name: pelota;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+}
+@keyframes pelota {
+  0% {
+    transform: translateY(40px) scale(1, 0.7);
+  }
+  4% {
+    transform: translatey(30px) rotate(1deg);
+  }
+  50% {
+    transform: translatey(-20px) rotate(130deg);
+  }
+  96% {
+    transform: translatey(30px) rotate(360deg);
+  }
+  100% {
+    transform: translateY(40px) scale(1, 0.7);
+  }
 }
 .main_inicio .apoyo {
   display: flex;
@@ -93,7 +122,6 @@ footer div {
 }
 .main_inicio .apoyo .buenas-zapatillas {
   width: 50%;
-  margin: 10px;
   padding: 10px;
   border: 3px solid rgb(231, 172, 172);
 }
@@ -107,9 +135,15 @@ footer div {
 .main_inicio .apoyo .tips {
   width: 40%;
   padding: 20px;
+  border: 3px solid rgb(231, 172, 172);
 }
 .main_inicio .video {
-  width: 50%;
+  width: 600px;
+  max-width: 100%;
+}
+.main_inicio .video iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
   padding: 20px;
 }
 
@@ -193,7 +227,7 @@ footer div {
 }
 
 .main_iconicas {
-  background-image: url("../../image/fondo-basquet.jpg");
+  background-image: url("../image/fondo-basquet.jpg");
   width: 100%;
   height: 125rem;
   display: flex;
@@ -389,7 +423,7 @@ footer div {
     align-items: center;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 770px) {
   .main_inicio {
     display: flex;
     flex-direction: column;
@@ -402,7 +436,6 @@ footer div {
   }
   .main_inicio .apoyo .buenas-zapatillas {
     width: 100%;
-    margin: 10px;
     border: 0px;
   }
   .main_inicio .apoyo .tips {
