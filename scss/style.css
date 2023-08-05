@@ -39,16 +39,18 @@ header nav ul :hover {
 footer {
   background-color: rgb(236, 203, 141);
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 footer nav {
-  width: 30%;
+  width: 35%;
   background-color: rgb(228, 183, 100);
 }
 footer nav ul {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 }
@@ -62,11 +64,53 @@ footer nav ul li a {
   display: inline-block;
   padding-top: 5px;
 }
-footer div {
-  width: 70%;
+footer .pie {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer .pie .copyright {
+  width: 100%;
+}
+footer .pie .copyright p {
   padding: 15px;
   font-weight: 500;
   color: brown;
+}
+footer .pie .copyright p span {
+  font-weight: 100;
+  color: rgb(0, 0, 0);
+}
+footer .pie .redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .pie .redes a .rs-facebook {
+  width: 30px;
+  border-radius: 5px;
+  background-color: rgb(25, 25, 165);
+}
+footer .pie .redes a .rs-instagram {
+  width: 30px;
+  border-radius: 5px;
+  background-color: rgb(235, 20, 206);
+}
+footer .pie .redes a .rs-tik-tok {
+  width: 30px;
+  border-radius: 5px;
+  background-color: rgb(226, 50, 50);
+}
+footer .pie .redes a .rs-twitter {
+  width: 30px;
+  border-radius: 5px;
+  background-color: rgb(0, 140, 255);
+}
+footer .pie .redes a .rs-whatsapp {
+  width: 30px;
+  border-radius: 5px;
+  background-color: rgb(24, 212, 24);
 }
 
 .main_inicio {
@@ -95,6 +139,7 @@ footer div {
 .main_inicio .inicio .pelota {
   width: 100px;
   height: 100px;
+  margin-right: 10px;
   animation-name: pelota;
   animation-duration: 0.6s;
   animation-iteration-count: infinite;

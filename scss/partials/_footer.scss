@@ -1,16 +1,18 @@
 footer{
     background-color: rgb(236, 203, 141);
     display: flex;
-    align-items: center;
+    align-items: stretch;
 
     nav{
-        width: 30%;
+        width: 35%;
         background-color: rgb(228, 183, 100);
 
         ul{
+            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-around;
             margin: 0;
             padding: 0;
 
@@ -27,10 +29,41 @@ footer{
             }
         }
     }
-    div{
-        width: 70%;
-        padding: 15px;
-        font-weight: 500;
-        color: brown ;
+    .pie{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .copyright{
+            width: 100%;
+
+            p{
+                padding: 15px;
+                font-weight: 500;
+                color: brown ;
+
+                span{
+                    
+                font-weight: 100;
+                color: rgb(0, 0, 0);
+                }
+            }
+        }
+        .redes{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            a{
+                @each $red, $color in $redes{
+                    .rs-#{$red}{
+                        width: 30px;
+                        border-radius: 5px;
+                        background-color: #{$color};
+                    }
+                }
+            }
+        }
     }
 }
