@@ -139,7 +139,7 @@ footer .pie .redes a .rs-whatsapp {
 .main_inicio .inicio .pelota {
   width: 100px;
   height: 100px;
-  margin-right: 10px;
+  margin-right: 30px;
   animation-name: pelota;
   animation-duration: 0.6s;
   animation-iteration-count: infinite;
@@ -472,9 +472,6 @@ footer .pie .redes a .rs-whatsapp {
   .main_inicio {
     display: flex;
     flex-direction: column;
-  }
-  .main_inicio .lotus {
-    width: 100%;
   }
   .main_inicio .apoyo {
     flex-direction: column;
